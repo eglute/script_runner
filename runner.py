@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import commands
 import sys
 from datetime import date, timedelta
