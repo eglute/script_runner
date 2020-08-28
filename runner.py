@@ -5,9 +5,9 @@ import sys
 from datetime import date, timedelta
 
 today = date.today()
-print("Today's date:", today)
 today_f = today.strftime("%Y-%m-%d")
-print(today)
+report = "Report Date: " + today_f
+print(report)
 yesterday = today - timedelta(days=1)
 yesterday_f = yesterday.strftime("%Y-%m-%d")
 
@@ -32,5 +32,6 @@ for res in result.split("- CPU Hours"):
         elif line.startswith("RAM MB-Hours:"):
             ram = line
         if project and ram:
-            print(start, end, project, ram)
+            outp = "From: " + start + ", To: " +  end + ", " + project + ", " + ram
+            print(outp)
             break
