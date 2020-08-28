@@ -36,6 +36,6 @@ for res in result.split("- CPU Hours"):
         if project and ram:
             ram_f = ram.split("RAM MB-Hours: ")[1]
             project_f = project.split("Project: ")[1]
-            outp = "- " + project_f + ", " + ram_f
+            outp = "- " + project_f + ": " + ram_f
             print(outp)
             break
